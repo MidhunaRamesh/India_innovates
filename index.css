@@ -1,0 +1,52 @@
+:root {
+  --bg-primary: #05060b;
+  --bg-secondary: #0f111a;
+  --bg-tertiary: #1a1d29;
+  --accent-primary: #00f2ff;
+  --accent-secondary: #7000ff;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --glass: rgba(255, 255, 255, 0.03);
+  --border: rgba(255, 255, 255, 0.08);
+
+  --plastic: #3b82f6;
+  --metal: #f59e0b;
+  --paper: #10b981;
+  --organic: #8b5cf6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-container {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
